@@ -1,8 +1,5 @@
 # Nombre del archivo: appveyor.yml
 
-# Define el sistema operativo
-os: windows
-
 # Especifica el entorno para construir tu proyecto
 environment:
   matrix:
