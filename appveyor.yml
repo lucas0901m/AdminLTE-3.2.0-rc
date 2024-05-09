@@ -1,0 +1,21 @@
+# Nombre del archivo: appveyor.yml
+
+# Define el sistema operativo
+os: windows
+
+# Especifica el entorno para construir tu proyecto
+environment:
+  matrix:
+    - nodejs_version: "lts/*"
+
+# Instala las dependencias del proyecto
+install:
+  - choco install nodejs
+  - npm install -g gulp-cli
+
+# Script de construcción
+build_script:
+  - npm install
+  - gulp build
+
+
